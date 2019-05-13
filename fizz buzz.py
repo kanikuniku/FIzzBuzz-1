@@ -4,8 +4,8 @@ if number % 3 == 0:
     output = "Fizz"
 else:
     output = str(number)
-else:
+elif:
 number % 5 == 0:
-output = "Fizz"
+output = "Buzz"
 
 print(output)
