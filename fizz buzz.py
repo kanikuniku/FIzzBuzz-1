@@ -4,22 +4,20 @@ from numpy.core import number
 def fizzbuzzz_convert(number):
 
 
-if number == number % 15:
-    print("FizzBuzz")
+if number % 15 == 0:
+    return ("FizzBuzz")
 
 elif number % 5 == 0:
-    print("Buzz")
+    return ("Buzz")
 
 elif number % 3 == 0:
-    print("Fizz")
+    return ("Fizz")
 
 else:
-    print(str(number))
+    return (str(number))
 
-fizzbuzzz_convert(1)
+result = fizzbuzzz_convert(1)
+print(result)
+
 fizzbuzzz_convert(2)
-fizzbuzzz_convert(34)
-fizzbuzzz_convert(34)
-fizzbuzzz_convert(3)
-fizzbuzzz_convert(1342)
-fizzbuzzz_convert(189)
+print(result)
