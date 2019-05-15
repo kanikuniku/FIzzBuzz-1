@@ -1,23 +1,16 @@
-from numpy.core import number
-
-
-def fizzbuzzz_convert(number):
-
+def fizzbuzz_convert(number):
 
 if number % 15 == 0:
-    return ("FizzBuzz")
+    return "FizzBuzz"
 
-elif number % 5 == 0:
-    return ("Buzz")
+    if number % 3 == 0:
+    return "Fizz"
+    if number % 5 == 0:
+        return "Buzz"
 
-elif number % 3 == 0:
-    return ("Fizz")
+return str(number)
 
-else:
-    return (str(number))
+for number in range(1, 101):
+    result = fizzbuzz_convert(number)
 
-result = fizzbuzzz_convert(1)
-print(result)
-
-fizzbuzzz_convert(2)
-print(result)
+    print(result)
