@@ -1,4 +1,5 @@
 def fizzbuzz_convert(number):
+    pass
 
 if number % 15 == 0:
     return "FizzBuzz"
@@ -11,6 +12,4 @@ if number % 15 == 0:
 return str(number)
 
 for number in range(1, 101):
-    result = fizzbuzz_convert(number)
-
-    print(result)
+    print(fizzbuzz_convert(number))
